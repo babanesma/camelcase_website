@@ -1,0 +1,82 @@
+name = Wego Theme
+description = Responsive Drupal 7 Theme by Arrowhitech JSC. 
+core = 7.x
+engine = phptemplate
+version = 1.0
+
+;stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/bootstrap-theme.css
+stylesheets[all][] = css/font-awesome.css
+stylesheets[all][] = css/jquery.fancybox.css
+stylesheets[all][] = css/jquery.owl.carousel.css
+stylesheets[all][] = js/rs-plugin/css/settings.css
+stylesheets[all][] = css/main.css
+stylesheets[all][] = css/color.css
+stylesheets[all][] = css/custom/custom.css
+stylesheets[all][] = tuner/css/tuner-main.css
+stylesheets[all][] = tuner/css/colorpicker.css
+
+;scripts[] = js/jquery.min.js
+scripts[] = js/jquery.noconflict.js
+scripts[] = js/jquery-ui.min.js
+scripts[] = js/jquery.counter.js
+scripts[] = js/jquery.knob.min.js
+scripts[] = js/jquery.form.min.js
+scripts[] = js/jquery.isotope.min.js
+scripts[] = js/jquery.validate.min.js
+scripts[] = js/jquery.countdown.min.js
+scripts[] = js/jquery.fancybox.pack.js
+scripts[] = js/jquery.fancybox-media.js
+scripts[] = js/jquery.imagesloaded.min.js
+scripts[] = js/jquery.owl.carousel.min.js
+scripts[] = js/jquery.fitvids.js
+scripts[] = js/jquery.placeholder.min.js
+scripts[] = js/main.js
+scripts[] = tuner/js/tuner-main.js
+scripts[] = tuner/js/colorpicker.js
+
+regions[top_bar] = Top Bar
+regions[menu] = Menu
+
+regions[top_content] = Top Content
+regions[content] = Content
+regions[blog_sidebar] = Blog Sidebar
+regions[blog_bottom] = Blog Bottom
+regions[team_bottom] = Team Bottom
+regions[portfolio_sidebar] = Portfolio Sidebar
+regions[portfolio_bottom] = Portfolio Bottom
+regions[bottom_content] = Bottom Content
+regions[after_content] = After Content
+regions[after_content_no_wrap] = After Content No Wrap
+regions[after_content_no_wrap2] = After Content No Wrap 2
+regions[sidebar_left] = Left Sidebar
+regions[sidebar_right] = Right Sidebar
+
+regions[footer_top] = Footer Top
+regions[footer_1] = Footer Box 1
+regions[footer_2] = Footer Box 2
+regions[footer_3] = Footer Box 3
+regions[footer_4] = Footer Box 4
+regions[footer_5] = Footer Box 5
+regions[footer_bottom] = Footer Bottom
+
+
+; Define theme setting defaults.
+settings[breadcrumbs] = '1'
+settings[page_title] = 'Welcome to Wego theme. Lets start your design here'
+settings[header_onepage] = index6
+settings[footer_1] = 
+settings[footer_2] = index2, index3
+settings[footer_3] = index4, index5, coming_soon_v2, 404_error_page_v2
+
+settings[switcher] = 1
+settings[layout_option] = widescreen
+settings[header_option] = header_default
+settings[footer_option] = footer1
+settings[color_type] = theme
+settings[custom_color] = 2d3e50
+settings[color_scheme] = 2d3e50
+settings[background_type] = image
+settings[background_color] = #FFFFFF
+settings[background_image] = item-1
+settings[breadcrumbs_image] = 2000x316.gif
