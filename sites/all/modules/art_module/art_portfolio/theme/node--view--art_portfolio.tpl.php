@@ -91,7 +91,7 @@
                 <div class="block block-portfolio-client-details">
                     <div class="block-head block-head-7"><?php print t('Client Details'); ?></div>
                     <p>
-                        <?php if (isset($node->field_client) && $node->field_client['und'][0]['value'] != ''): ?>
+                        <?php if (isset($node->field_client) && isset($node->field_client['und']) && $node->field_client['und'][0]['value'] != ''): ?>
                             <?php print t('Client'); ?>: <?php echo $node->field_client['und'][0]['value']; ?><br>
                         <?php endif; ?>
                         <?php print t('Category'); ?>: <?php print wego_format_comma_field('art_portfolio_categories', $node); ?><br>

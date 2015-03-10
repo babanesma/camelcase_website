@@ -84,7 +84,7 @@
 hide($content['comments']);
 hide($content['links']);
 // get image
-$thumbnail_image = file_create_url($node->field_thumbnail['und'][0]['uri']);
+$thumbnail_image = isset($node->field_thumb) ? file_create_url($node->field_thumbnail['und'][0]['uri']) : "";
 ?>
 <div>
     <a href="<?php echo $node_url; ?>" class="pic">
