@@ -44,7 +44,7 @@ if (isset($node->field_image['und'])) {
     </div>
     <div class="info">
         <h3><?php print $title; ?></h3>
-        <h4><?php print $node->field_regency['und'][0]['value']; ?></h4>
-        <?php print $node->body['und'][0]['summary']; ?>
+        <h4><?php print isset($node->field_regency['und']) ? $node->field_regency['und'][0]['value'] : ""; ?></h4>
+        <?php print isset($node->body['und']) ? $node->body['und'][0]['summary'] : ""; ?>
     </div>
 </li>
