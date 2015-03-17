@@ -63,7 +63,7 @@ regions[footer_bottom] = Footer Bottom
 
 ; Define theme setting defaults.
 settings[breadcrumbs] = '1'
-settings[page_title] = 'Welcome to Wego theme. Lets start your design here'
+settings[page_title] = 'Welcome to Wego theme. Lets start your design heres'
 settings[header_onepage] = index6
 settings[footer_1] = 
 settings[footer_2] = index2, index3
