@@ -40,17 +40,7 @@ $contacts_v3 = count(array_intersect(array('contacts_v3'), $array_curr_uri));
 				?>
 			</div>
 			
-			<?php if ($coming_soon_v1 == 0 && $coming_soon_v2 == 0): ?>
-                <!-- main search -->
-                <div id="main-search" class="main-search">
-                    <button type="button" class="fa fa-search"></button>
-                    <?php
-						$block = module_invoke('search', 'block_view', 'form');
-						print render($block['content']);
-                    ?>
-                </div>
-                <!--/ main search -->
-            <?php endif; ?>
+
 
             <!-- logo -->
             <?php if ($logo): ?>
