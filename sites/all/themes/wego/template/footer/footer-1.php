@@ -9,7 +9,6 @@
     <div class="grid-row">
         <!-- subscription -->
         <div class="widget-subscription clearfix">
-            <div class="head"><i class="fa fa-edit"></i><?php print t('Subscribe to our Newsletter'); ?></div>
             <?php if ($page['footer_top']) : ?>
                 <?php print render($page['footer_top']); ?>
             <?php endif; ?>
