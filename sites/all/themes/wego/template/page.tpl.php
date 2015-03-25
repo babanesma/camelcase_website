@@ -54,9 +54,9 @@ $is_portfolio = count(array_intersect(array('portfolio'), $array_curr_uri));
                     <span>
                         <a href="<?php print $front_page; ?>">
                             <?php if ($coming_soon_v1 > 0): ?>
-                                <img src="<?php print $theme_root; ?>/img/samples/logo-alt.png" width="276" height="62" alt="<?php print t('Home'); ?>">
+                                <img src="<?php print $theme_root; ?>/img/samples/logo-alt.png" alt="<?php print t('Home'); ?>">
                             <?php else: ?>
-                                <img src="<?php print $logo; ?>" width="276" height="62" alt="<?php print t('Home'); ?>">
+                                <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>">
                             <?php endif; ?>
                         </a>
                     </span>

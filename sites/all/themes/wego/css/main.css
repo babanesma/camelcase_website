@@ -939,6 +939,7 @@ noindex:-o-prefocus, .page-header-bottom + div { /* opera hack */
 }
 .logo img {
 	display: block;
+	height: 38px;
 }
 .logo span {
 	display: table-cell;
@@ -1354,7 +1355,7 @@ noindex:-o-prefocus, .main-nav { /* opera hack */
 .main-nav .switcher {
 	position: absolute;
 	top: -58px;
-	right: 80px;
+	right: 20px;
 	display: none;
 	height: 30px;
 	padding: 2px 0 0 13px;

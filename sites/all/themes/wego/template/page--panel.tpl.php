@@ -50,7 +50,7 @@ $contacts_v3 = count(array_intersect(array('contacts_v3'), $array_curr_uri));
                             <?php if ($coming_soon_v1 > 0): ?>
                                 <img src="<?php print $theme_root; ?>/img/samples/logo-alt.png" width="276" height="62" alt="<?php print t('Home'); ?>">
                             <?php else: ?>
-                                <img src="<?php print $logo; ?>" width="276" height="62" alt="<?php print t('Home'); ?>">
+                                <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>">
                             <?php endif; ?>
                         </a>
                     </span>
