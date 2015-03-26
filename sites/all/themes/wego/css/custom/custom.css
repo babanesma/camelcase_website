@@ -225,7 +225,7 @@ li.comment-element {
 .main-nav li.top-parent.active-trail > a:before {
     opacity: 1;
 }
-.main-nav .block {margin-bottom: 80px;}
+.main-nav .block {margin-bottom: 0px;}
 div.messages {
     /*padding: 4px 0 4px 50px;*/
     padding: 15px;
