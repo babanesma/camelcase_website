@@ -610,7 +610,7 @@ jQuery(function()
 	/**/
 	/* clients */
 	/**/
-	/*jQuery('.block-clients .carousel').imagesLoaded(function()
+	jQuery('.block-clients .carousel').imagesLoaded(function()
 	{
 		jQuery('.block-clients .carousel').owlCarousel(
 		{
