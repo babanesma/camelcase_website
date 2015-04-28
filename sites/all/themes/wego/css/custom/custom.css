@@ -1139,3 +1139,19 @@ header.fixed .shopping-cart .cart-empty-block {margin-top: 14px;}
 .block-team-2 .pic:hover:before {
 	opacity: 0;
 }
+
+.block-map .block-cont {
+	opacity: 1.5;
+}
+
+.block-services ul{
+        margin-left: 119px;
+}
+
+.block-cont li p{
+    color: black;
+}
+
+.block-cont p{
+    color: black;
+}
