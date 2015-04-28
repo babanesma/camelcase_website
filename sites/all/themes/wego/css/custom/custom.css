@@ -1135,3 +1135,7 @@ header.fixed .shopping-cart .cart-empty-block {margin-top: 14px;}
     #commerce-checkout-form-review #edit-buttons .fieldset-wrapper{ text-align: center;}
     #payment-details .form-type-select{margin: 10px 0;}
 }
+
+.block-team-2 .pic:hover:before {
+	opacity: 0;
+}
