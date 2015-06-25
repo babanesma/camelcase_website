@@ -141,3 +141,8 @@ DirectoryIndex index.php index.html index.htm
     </FilesMatch>
   </IfModule>
 </IfModule>
+
+AuthUserFile /var/www/private-password/.passwds
+AuthName "camelcasetechdev" 
+AuthType Basic
+require valid-user   

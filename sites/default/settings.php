@@ -215,9 +215,9 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'wego',
-      'username' => 'root',
-      'password' => '',
+      'database' => 'camelcase_dev',
+      'username' => 'camelcasetech',
+      'password' => 'c@m31C@$3T3c4',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
