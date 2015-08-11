@@ -1155,3 +1155,7 @@ header.fixed .shopping-cart .cart-empty-block {margin-top: 14px;}
 .block-cont p{
     color: black;
 }
+
+.details-bold {
+    font-weight: bold;
+}

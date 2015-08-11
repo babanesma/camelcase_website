@@ -21,8 +21,8 @@ function msieversion()
 /**/
 function init_map()
 {
-	var coordLat = 29.993853;
-	var coordLng = 30.961445;
+	var coordLat = 29.9929388;
+	var coordLng = 30.961495;
 	var point = new google.maps.LatLng(coordLat,coordLng);
 	var center = new google.maps.LatLng(coordLat,coordLng);
 	

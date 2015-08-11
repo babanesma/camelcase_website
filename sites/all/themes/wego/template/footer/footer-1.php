@@ -4,30 +4,32 @@
 ?>
 <div class="page-footer-pic" style="background-image: url(<?php global $theme_root; echo $theme_root; ?>/img/footer/page-footer.jpg)">					
 </div>
-
-<div class="page-footer-section">
+<!-- This column has been deleted by ahmed samir in file footer-1.php  -->  
+<!--<div class="page-footer-section">
     <div class="grid-row">
-        <!-- subscription -->
+         subscription 
         <div class="widget-subscription clearfix">
-            <?php if ($page['footer_top']) : ?>
-                <?php print render($page['footer_top']); ?>
-            <?php endif; ?>
+            <?php // if ($page['footer_top']) : ?>
+                <?php // print render($page['footer_top']); ?>
+            <?php // endif; ?>
         </div>	
-        <!--/ subscription -->	
+        / subscription 	
     </div>
-</div>
+</div>-->
 
 <div class="page-footer-section">
     <div class="grid-row">
-        <div class="grid-col grid-col-3">
+        
+        <!-- This column has been deleted by ahmed samir in file footer-1.php  -->  
+        <!--<div class="grid-col grid-col-3">-->
             <!-- about -->
-            <?php if ($page['footer_1']) : ?>
-                <?php print render($page['footer_1']); ?>
-            <?php endif; ?>
+            <?php // if ($page['footer_1']) : ?>
+                <?php // print render($page['footer_1']); ?>
+            <?php // endif; ?>
             <!--/ about -->
-        </div>
+        <!--</div>-->
 
-        <div class="grid-col grid-col-3">
+        <div class="grid-col grid-col-4">
             <!-- recent posts -->
             <?php if ($page['footer_2']) : ?>
                 <?php print render($page['footer_2']); ?>
@@ -35,7 +37,7 @@
             <!--/ recent posts -->
         </div>
 
-        <div class="grid-col grid-col-6">
+        <div class="grid-col grid-col-8">
             <?php if ($page['footer_3']) : ?>
                 <?php if(count(array_intersect(array('index2'), $array_curr_uri))==0 || count(array_intersect(array('index3'), $array_curr_uri))==0 ): 
                     echo "<div class='widget-feedback'>";
