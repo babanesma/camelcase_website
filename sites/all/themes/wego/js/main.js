@@ -148,7 +148,7 @@ jQuery(function()
 	/**/
 	/* scroll nav */
 	/**/
-	jQuery('#scroll-nav').on('click', 'a', function()
+	jQuery('#scroll-nav, #scroll-footer').on('click', 'a', function()
 	{
 		var topPos = 0;
 		if( winWidth < 768 )
@@ -163,7 +163,7 @@ jQuery(function()
 		
 		return false;
 	});
-	jQuery('#scroll-nav a').each(function()
+	jQuery('#scroll-nav a, #scroll-footer a').each(function()
 	{
 		var $aobj = jQuery(this);
 		jQuery(window).scroll(function()
