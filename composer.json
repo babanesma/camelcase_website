@@ -1,5 +1,11 @@
 {
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/camelcasetechsd/drush"
+        }
+    ],
     "require": {
-        "drush/drush": "7.x"
+        "drush/drush": "dev-master as 7.0.0"
     }
 }
