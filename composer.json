@@ -6,6 +6,6 @@
         }
     ],
     "require": {
-        "drush/drush": "dev-master as 7.0.0"
+        "drush/drush": "dev-jenkins-server as 7.0.0"
     }
 }
