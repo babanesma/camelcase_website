@@ -8,3 +8,5 @@ nbproject
 sites/*/files/css/*
 sites/*/files/js/*
 sites/*/files/ctools/css/*
+composer.lock
+vendor
