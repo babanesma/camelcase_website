@@ -6,6 +6,32 @@
 global $theme_root;
 $theme_root = base_path() . path_to_theme();
 
+function wego_js_alter(&$javascript)
+{
+    
+    unset($javascript['sites/all/themes/wego/js/jquery.placeholder.min.js']);
+    unset($javascript['sites/all/themes/wego/js/jquery.fitvids.js']);
+    unset($javascript['sites/all/themes/wego/js/jquery.form.min.js']);
+    unset($javascript['sites/all/themes/wego/js/jquery.counter.js']);
+    unset($javascript['sites/all/themes/wego/js/jquery.noconflict.js']);
+    unset($javascript['sites/all/modules/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js']);
+    
+        
+    // Collect the scripts we want in to remain in the header scope.
+  $header_scripts = array(
+//    'sites/all/modules/jquery_update/replace/jquery/1.10/jquery.min.js',
+  );
+  
+  // Change the default scope of all other scripts to footer.
+  // We assume if the script is scoped to header it was done so by default.
+  foreach ($javascript as $key => &$script) {
+      if ($script['scope'] == 'header' && !in_array($script['data'], $header_scripts)) {
+            $script['scope'] = 'footer';
+    }
+  }
+}
+
+
 /**
  * Strip unwanted rel attributes from meta tags in <head>.
  */
@@ -22,12 +48,28 @@ function wego_html_head_alter(&$head_elements) {
 }
 
 function wego_css_alter(&$css) {
+    
     // Remove defaults.css file.
-    unset($css[drupal_get_path('module', 'system') . '/defaults.css']);
-    unset($css[drupal_get_path('module', 'system') . '/system.css']);
-    unset($css[drupal_get_path('module', 'system') . '/system.menus.css']);
-    unset($css[drupal_get_path('module', 'system') . '/system.theme.css']);
-    unset($css[drupal_get_path('module', 'user') . '/user.css']);
+    unset($css[drupal_get_path('module', 'system')   . '/defaults.css']);
+    unset($css[drupal_get_path('module', 'system')   . '/system.css']);
+    unset($css[drupal_get_path('module', 'system')   . '/system.menus.css']);
+    unset($css[drupal_get_path('module', 'system')   . '/system.theme.css']);
+    unset($css[drupal_get_path('module', 'system')   . '/system.messages.css']);
+    unset($css[drupal_get_path('module', 'user')     . '/user.css']);
+    unset($css[drupal_get_path('module', 'comment')  . '/comment.css']);
+    unset($css[drupal_get_path('module', 'field')    . '/theme/field.css']);
+    unset($css[drupal_get_path('module', 'forum')    . '/forum.css']);
+    unset($css[drupal_get_path('module', 'node')     . '/node.css']);
+    unset($css[drupal_get_path('module', 'search')   . '/search.css']);
+    unset($css[drupal_get_path('module', 'shortcut') . '/shortcut.css']);
+    unset($css['sites/all/modules/views/css/views.css']);
+    unset($css['sites/all/modules/panels/css/panels.css']);
+    unset($css['sites/all/modules/ctools/css/ctools.css']);
+    unset($css['sites/all/modules/ckeditor/css/ckeditor.css']);
+    unset($css['sites/all/themes/wego/css/jquery.fancybox.css']);
+    unset($css['sites/all/libraries/isotope/jquery.isotope.css']);
+    unset($css['sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css']);
+    unset($css['sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css']);
     // .. etc..
 }
 

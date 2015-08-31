@@ -159,10 +159,11 @@ if($settings->dottedOverlay) {
 	$slidesetting->dottedOverlay = $settings->dottedOverlay;
 }
 $slidesetting = json_encode($slidesetting);
-$js = "jQuery(document).ready(function($){if($.fn.cssOriginal!=undefined)$.fn.css = $.fn.cssOriginal;$('#{$id} .tp-banner').show().revolution({$slidesetting});})";
+//$js = "jQuery(document).ready(function($){if($.fn.cssOriginal!=undefined)$.fn.css = $.fn.cssOriginal;$('#{$id} .tp-banner').show().revolution({$slidesetting});})";
+$GLOBALS['slide_js'] = "jQuery(document).ready(function($){if($.fn.cssOriginal!=undefined)$.fn.css = $.fn.cssOriginal;$('#{$id} .tp-banner').show().revolution({$slidesetting});})";
 ?>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
-<?php print $js; ?>
+<?php // print $js; ?>
 //--><!]]>
 </script>

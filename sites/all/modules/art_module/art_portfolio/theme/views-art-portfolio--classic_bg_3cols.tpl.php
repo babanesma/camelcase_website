@@ -13,9 +13,9 @@
 <div id="<?php print $view_id; ?>" class="art-portfolio supcolumns<?php echo $columns; ?>">
     <!-- portfolio -->
     <?php if ($use_pager == 0) : ?>
-        <script>
-            jQuery('.item-list').hide();
-        </script>
+        <!--<script>-->
+           <?php $GLOBALS['item_list'] = "jQuery('.item-list').hide();"; ?> 
+        <!--</script>-->
     <?php endif; ?>
     <div style="background-image: url(<?php echo $theme_root; ?>/img/samples/slideshow/item-1.jpg)" class="block <?php
     if (empty($block_portfolio)) {

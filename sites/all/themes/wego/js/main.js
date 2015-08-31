@@ -900,7 +900,8 @@ jQuery(function()
 		var script = document.createElement('script');
 	 	script.type = 'text/javascript';
 	 	script.src = 'https://maps.googleapis.com/maps/api/js?sensor=false&callback=init_map';
-	 	document.body.appendChild(script);
+//	 	document.body.appendChild(script);
+                jQuery('body').prepend(script);
  	}
 	
 	

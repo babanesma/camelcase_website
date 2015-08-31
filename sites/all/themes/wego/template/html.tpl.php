@@ -25,9 +25,15 @@
         <?php print $page_top; ?>
         <?php print $page; ?>
         <?php print $page_bottom; ?>
+        <script type="text/javascript">            
+            <?php echo $GLOBALS['slide_js'];  ?>   
+            <?php echo $GLOBALS['item_list']; ?>
+             /**  We don't use the email form so we don't need this JS now */
+            <?php // echo $GLOBALS['email_form']; ?>    
+        </script>
         <script type="text/javascript" src="<?php echo $theme_root; ?>/js/custom/custom.js"></script>
 		<?php include('footer/foot.php'); ?>
-		<script>
+<!--		<script>
 			function continueShopping() {location.href = '<?php echo base_path(); ?>shop';}
 			function showCart() {location.href = '<?php echo base_path(); ?>cart';}
 			jQuery(document).ready( function() {
@@ -39,6 +45,6 @@
 					jQuery('.shopping-cart .view-footer').css('top', height + 44);
 				});
 			});
-		</script>
+		</script>-->
     </body>
 </html>

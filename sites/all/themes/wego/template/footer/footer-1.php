@@ -69,10 +69,14 @@
         <?php endif; ?>
     </div>
 </div>
-<script type="text/javascript">
+<!--<script type="text/javascript">-->
+<?php
+$GLOBALS['email_form']= <<<EOT
     jQuery(document).ready(function(){
         jQuery('#edit-email').val('');
         jQuery("#edit-email").attr("placeholder","Enter your e-mail");
         jQuery('#edit-newsletter-submit').val('SEND');
     });
-</script>
+EOT;
+?>
+<!--</script>-->
