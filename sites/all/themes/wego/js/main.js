@@ -82,7 +82,7 @@ jQuery(window).resize(function()
 /**/
 /* on document load */
 /**/
-jQuery(function()
+jQuery(window).load(function()
 {
 	winWidth = jQuery(window).width();
 	winHeight = jQuery(window).height();
@@ -901,7 +901,9 @@ jQuery(function()
 	 	script.type = 'text/javascript';
 	 	script.src = 'https://maps.googleapis.com/maps/api/js?sensor=false&callback=init_map';
 //	 	document.body.appendChild(script);
-                jQuery('body').prepend(script);
+//                jQuery(window).load(function ($){
+                   jQuery('body').prepend(script); 
+//                });
  	}
 	
 	
