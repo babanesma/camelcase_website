@@ -21,7 +21,7 @@
         <!--/ favicon -->
 		<style id="switch_color" type="text/css"></style>
     </head>
-    <body class="<?php print $classes; ?>" <?php print $attributes; ?> style="<?php if(theme_get_setting('background_type') == 'color') : ?> background:#<?php print theme_get_setting('background_color'); ?> <?php else :?> background:url(<?php echo $theme_root; ?>/img/patterns/<?php print theme_get_setting('background_image'); ?>.png); <?php endif; ?>">
+    <body class="<?php print $classes; ?> ready" <?php print $attributes; ?> style="<?php if(theme_get_setting('background_type') == 'color') : ?> background:#<?php print theme_get_setting('background_color'); ?> <?php else :?> background:url(<?php echo $theme_root; ?>/img/patterns/<?php print theme_get_setting('background_image'); ?>.png); <?php endif; ?>">
         <?php print $page_top; ?>
         <?php print $page; ?>
         <?php print $page_bottom; ?>

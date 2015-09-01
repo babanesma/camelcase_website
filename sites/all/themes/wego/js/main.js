@@ -925,13 +925,13 @@ jQuery(window).load(function()
 /**/
 /* on window load */
 /**/
-jQuery(window).load(function()
-{	
-	setTimeout(function()
-	{
-		jQuery('body').addClass('ready');
-	}, 100);
-});
+//jQuery(window).load(function()
+//{	
+//	setTimeout(function()
+//	{
+//		jQuery('body').addClass('ready');
+//	}, 100);
+//});
 
 jQuery(document).ready( function() {
 	jQuery('#edit-range-from').attr('disabled', true);
