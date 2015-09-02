@@ -89,7 +89,8 @@ $original_image = file_create_url($node->art_portfolio_image['und'][0]['uri']);
 <div>
     <div class="pic">
         <img src="<?php echo $original_image; ?>" height="195" alt="">
-        <a href="<?php print $node_url; ?>" class="link"></a>
+        <?php /**<a href="<?php print $node_url; ?>" class="link"></a> */?>
+        <a href="<?php echo $original_image; ?>" class="link project_image"></a>
         <a href="<?php echo $original_image; ?>" rel="fancybox" class="fancybox fa fa-search-plus"></a>
     </div>
 </div>

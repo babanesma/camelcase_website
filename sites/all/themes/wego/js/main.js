@@ -82,12 +82,16 @@ jQuery(window).resize(function()
 /**/
 /* on document load */
 /**/
-jQuery(window).load(function()
+jQuery(function($)
 {
 	winWidth = jQuery(window).width();
 	winHeight = jQuery(window).height();
 	
-	
+        
+	$('.project_image').click(function (event){
+            event.preventDefault();
+            $(this).parent().find('.fancybox').click();
+        });
 	/**/
 	/* parallax */
 	/**/
