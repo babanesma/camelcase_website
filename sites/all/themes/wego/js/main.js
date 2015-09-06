@@ -88,10 +88,7 @@ jQuery(function($)
 	winHeight = jQuery(window).height();
 	
         
-	$('.project_image').click(function (event){
-            event.preventDefault();
-            $(this).parent().find('.fancybox').click();
-        });
+	
 	/**/
 	/* parallax */
 	/**/
@@ -111,9 +108,28 @@ jQuery(function($)
 	
 	/**/
 	/* fancybox */
-	/**/
-	jQuery(".fancybox").fancybox();
+	/**/	
+        jQuery(".fancybox").fancybox({
+                prevEffect	: 'none',
+		nextEffect	: 'none',
+                helpers: {
+                  title	: {
+				type: 'outside'
+			},
+                  thumbs	: {
+                            width	: 50,
+                            height	: 50
+                  }, 
+                  overlay: {
+                           locked: false
+                  }
+                }
+        });
 	
+        $('.project_image').click(function (event){
+            event.preventDefault();
+            $(this).parent().find('.fancybox').click();
+        });
 	
 	/**/
 	/* main search */
@@ -939,5 +955,5 @@ jQuery(function($)
 
 jQuery(document).ready( function() {
 	jQuery('#edit-range-from').attr('disabled', true);
-	jQuery('#edit-range-to').attr('disabled', true);
+	jQuery('#edit-range-to').attr('disabled', true);        
 });
