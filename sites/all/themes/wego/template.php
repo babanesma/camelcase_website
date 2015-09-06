@@ -66,7 +66,6 @@ function wego_css_alter(&$css) {
     unset($css['sites/all/modules/panels/css/panels.css']);
     unset($css['sites/all/modules/ctools/css/ctools.css']);
     unset($css['sites/all/modules/ckeditor/css/ckeditor.css']);
-    unset($css['sites/all/themes/wego/css/jquery.fancybox.css']);
     unset($css['sites/all/libraries/isotope/jquery.isotope.css']);
     unset($css['sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css']);
     unset($css['sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css']);
