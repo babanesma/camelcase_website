@@ -77,7 +77,8 @@ $is_portfolio = count(array_intersect(array('portfolio'), $array_curr_uri));
     <!--/ page header bottom -->
 
     <!-- page intro -->
-    <?php if ($title) : ?>
+    <?php // if ($title) : ?>
+    <?php if (false) : ?>
         <div class="page-intro">
             <div class="pic" style="background-image: url(<?php echo file_create_url(theme_get_setting('breadcrumbs_image')); ?>)"></div>
             <div class="grid-row clearfix">
