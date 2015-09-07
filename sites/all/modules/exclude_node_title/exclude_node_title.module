@@ -240,6 +240,10 @@ function _exclude_node_title($param, $view_mode = 'full') {
     }
   }
 
+  if(!isset($exclude_settings[$node_type])) {
+      return FALSE;
+  }
+  
   switch ($exclude_settings[$node_type]['type']) {
     case 'all':
       return !empty($exclude_settings[$node_type]['modes'][$view_mode]);
