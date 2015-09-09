@@ -22,29 +22,33 @@
 		<style id="switch_color" type="text/css"></style>
     </head>
     <body class="<?php print $classes; ?> ready" <?php print $attributes; ?> style="<?php if(theme_get_setting('background_type') == 'color') : ?> background:#<?php print theme_get_setting('background_color'); ?> <?php else :?> background:url(<?php echo $theme_root; ?>/img/patterns/<?php print theme_get_setting('background_image'); ?>.png); <?php endif; ?>">
-        <?php print $page_top; ?>
-        <?php print $page; ?>
-        <?php print $page_bottom; ?>
-        <script type="text/javascript">            
-            <?php echo $GLOBALS['slide_js'];  ?>   
-            <?php echo $GLOBALS['item_list']; ?>
-             /**  We don't use the email form so we don't need this JS now */
-            <?php // echo $GLOBALS['email_form']; ?>    
-        </script>
-        <script type="text/javascript" src="<?php echo $theme_root; ?>/js/custom/custom.js"></script>
-		<?php include('footer/foot.php'); ?>
-<!--		<script>
-			function continueShopping() {location.href = '<?php echo base_path(); ?>shop';}
-			function showCart() {location.href = '<?php echo base_path(); ?>cart';}
-			jQuery(document).ready( function() {
-				var link = '<input onclick="continueShopping();" type="button" class="form-submit button" value="Continue Shopping" name="op" id="continue-shopping">';
-				jQuery('.commerce-line-item-actions').append(link);
-				
-				jQuery('.top-cart-icon').hover( function() {
-					var height = jQuery('.shopping-cart .view-content').height();
-					jQuery('.shopping-cart .view-footer').css('top', height + 44);
-				});
-			});
-		</script>-->
+        <div id="loading_image" style="visibility: hidden;">            
+        </div>
+        <div id="real-body">      
+            <?php print $page_top; ?>
+            <?php print $page; ?>
+            <?php print $page_bottom; ?>
+            <script type="text/javascript">            
+                <?php echo $GLOBALS['slide_js'];  ?>   
+                <?php echo $GLOBALS['item_list']; ?>
+                 /**  We don't use the email form so we don't need this JS now */
+                <?php // echo $GLOBALS['email_form']; ?>    
+            </script>
+            <script type="text/javascript" src="<?php echo $theme_root; ?>/js/custom/custom.js"></script>
+                    <?php include('footer/foot.php'); ?>
+    <!--		<script>
+                            function continueShopping() {location.href = '<?php echo base_path(); ?>shop';}
+                            function showCart() {location.href = '<?php echo base_path(); ?>cart';}
+                            jQuery(document).ready( function() {
+                                    var link = '<input onclick="continueShopping();" type="button" class="form-submit button" value="Continue Shopping" name="op" id="continue-shopping">';
+                                    jQuery('.commerce-line-item-actions').append(link);
+
+                                    jQuery('.top-cart-icon').hover( function() {
+                                            var height = jQuery('.shopping-cart .view-content').height();
+                                            jQuery('.shopping-cart .view-footer').css('top', height + 44);
+                                    });
+                            });
+                    </script>-->
+        </div>
     </body>
 </html>

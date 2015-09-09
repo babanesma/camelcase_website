@@ -1,0 +1,5 @@
+name = Loading Image
+description = Provides a loading image till the whole page load.
+core = 7.x
+files[] = loading_image.module
+stylesheets[all][] = css/loading_image.css

@@ -1,0 +1,4 @@
+<?php
+drupal_add_css(drupal_get_path('module', 'loading_image') . '/css/loading_image.css', array('group' => CSS_DEFAULT, 'type' => 'file'));
+drupal_add_js(drupal_get_path('module', 'loading_image') . '/js/loading_image.js');
+

@@ -1,0 +1,26 @@
+#real-body {
+    opacity: 0;
+}
+
+.body-shown {
+    opacity: 1 !important;
+}
+#loading_image {
+    
+    visibility: visible !important;
+    padding-top: 210px;
+    padding-bottom: 178px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 136px;
+}
+
+#loading_image img {
+    width: 173px;
+}
+
+#loading_image p {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
