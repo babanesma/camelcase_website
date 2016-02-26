@@ -17,7 +17,7 @@
            <?php $GLOBALS['item_list'] = "jQuery('.item-list').hide();"; ?> 
         <!--</script>-->
     <?php endif; ?>
-    <div style="background-image: url(<?php echo $theme_root; ?>/img/samples/slideshow/item-1.jpg)" class="block <?php
+    <div class="block <?php
     if (empty($block_portfolio)) {
         echo 'block-portfolio-7';
     } else {
