@@ -7,12 +7,16 @@
                     <?php $i = 1; ?>
                     <?php foreach ($rows as $id => $row): ?>
                         <?php print $row; ?>
-                    <?php if ($i == 4 || $i == 8): ?>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                        <?php endif; ?>
+
+	                    <?php if ($i%4 == 0): ?>
+	                        	</ul>
+	                    	</div>
+	                    	<?php if (isset($rows[$i+1])): ?>
+		                	    <div>
+		                    	    <ul>
+	                        <?php endif; ?>
+	                    <?php endif; ?>
+
                         <?php $i++; ?>
                     <?php endforeach; ?>     
                 </ul>
